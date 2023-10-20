@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-    app.use('/images', exp.static(__dirname + '/images'));
     
     var currentPage = window.location.pathname;
     var screenSize = screen.width - 100;
@@ -9,8 +7,7 @@ $(document).ready(function () {
 
     var folder = "images" + currentPage + "/";
     const overLay = 'images/pictureOverlay.png';
-    $.ajax({
-        url : folder,
+    $.ajax({url : folder,
         success: function (data) {
             $(data).find("a").attr("href", function (i, val) {
                 if( val.match(/\.(jpe?g|png|gif)$/) ) {
