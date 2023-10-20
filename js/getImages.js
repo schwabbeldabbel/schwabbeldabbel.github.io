@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    app.use('/images', exp.static(__dirname + '/images'));
+    
     var currentPage = window.location.pathname;
     var screenSize = screen.width - 100;
     $(".grid").append(" <div><p class=\"footerText\" id=\"impress\"><a href=\"/impressum\">Impressum</a></p></div><div sec:authorize=\"hasRole('ROLE_ADMIN')\"><p class=\"footerText\" id=\"upload\"><a href=\"/upload\">Hochladen</a></p></div><div><p class=\"footerText\" id=\"login\"><a href=\"/login\">Login</a></p></div>")
