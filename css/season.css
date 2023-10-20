@@ -1,0 +1,110 @@
+html, body{
+    height: 100%;
+    background-color: black;
+}
+
+.wrapper{
+    height: 100%;
+    font-family: Century Gothic;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.season{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+hr{
+    border-width: 1px;
+    height: 1px;
+    border-color: antiquewhite;    
+}
+
+#breakLine{
+    height: fit-content;
+}
+
+.scroll{
+    background: rgb(54,39,21);
+    background: radial-gradient(circle, rgba(54,39,21,1) 0%, rgba(91,91,91,1) 100%);
+    padding: 5px;
+}
+
+#start{
+    text-align: right;
+    height: 40px;
+}
+
+p{
+    margin: 0px;
+    color: beige;
+    font-size: 100%;
+}
+
+.spring{
+    background-image: url("../images/seasons/spring/FullSpring.jpg");
+    margin: 0px;
+}
+
+.summer{
+    background-image: url("../images/seasons/summer/FullSummer.jpg");
+    margin: 0px;
+
+}
+
+.autumn{
+    background-image: url("../images/seasons/autumn/FullAutumn.jpg");
+    margin: 0px;
+
+}
+
+.winter{
+    background-image: url("../images/seasons/winter/FullWinter.jpg");
+    margin: 0px;
+
+}
+
+.arrow{
+    position: fixed;
+    display: flexbox;
+    width: 100%;
+    bottom: 20px;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+#arrowImg{
+    background-image: url("../images/seasons/arrow.png");
+    height: 39px;
+    width: 39px;
+    margin: 0 50%;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#arrowImg.hide{
+    opacity: 0;
+}
